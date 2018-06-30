@@ -1,0 +1,322 @@
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 prlimit64(0, RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}, NULL) = 0
+32667 32666 32667 execve("/bin/bash", ["/bin/bash", "-c", "fail=; \\\nif (target_option=k; ca"...], 0x5564cabbfd30 /* 58 vars */) = 0
+32667 32666 32667 brk(NULL)             = 0x25f4000
+32667 32666 32667 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+32667 32666 32667 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/tls/haswell/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/tls/haswell/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/tls/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/tls/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/haswell/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/haswell/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/local/cuda/lib64/tls/haswell/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 stat("/usr/local/cuda/lib64/tls/haswell/x86_64", 0x7ffe79f298b0) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/local/cuda/lib64/tls/haswell/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 stat("/usr/local/cuda/lib64/tls/haswell", 0x7ffe79f298b0) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/local/cuda/lib64/tls/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 stat("/usr/local/cuda/lib64/tls/x86_64", 0x7ffe79f298b0) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/local/cuda/lib64/tls/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 stat("/usr/local/cuda/lib64/tls", 0x7ffe79f298b0) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/local/cuda/lib64/haswell/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 stat("/usr/local/cuda/lib64/haswell/x86_64", 0x7ffe79f298b0) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/local/cuda/lib64/haswell/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 stat("/usr/local/cuda/lib64/haswell", 0x7ffe79f298b0) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/local/cuda/lib64/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 stat("/usr/local/cuda/lib64/x86_64", 0x7ffe79f298b0) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/local/cuda/lib64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 stat("/usr/local/cuda/lib64", {st_mode=S_IFDIR|S_ISGID|0755, st_size=4096, ...}) = 0
+32667 32666 32667 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0644, st_size=145054, ...}) = 0
+32667 32666 32667 mmap(NULL, 145054, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1f1a4c7000
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\321\0\0\0\0\0\0"..., 832) = 832
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0644, st_size=170784, ...}) = 0
+32667 32666 32667 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1f1a4c5000
+32667 32666 32667 mmap(NULL, 2267936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1f1a09d000
+32667 32666 32667 mprotect(0x7f1f1a0c3000, 2093056, PROT_NONE) = 0
+32667 32666 32667 mmap(0x7f1f1a2c2000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x25000) = 0x7f1f1a2c2000
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/tls/haswell/x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/tls/haswell/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/tls/x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/tls/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/haswell/x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/haswell/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/local/cuda/lib64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\16\0\0\0\0\0\0"..., 832) = 832
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0644, st_size=14592, ...}) = 0
+32667 32666 32667 mmap(NULL, 2109712, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1f19e99000
+32667 32666 32667 mprotect(0x7f1f19e9c000, 2093056, PROT_NONE) = 0
+32667 32666 32667 mmap(0x7f1f1a09b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f1f1a09b000
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/tls/haswell/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/tls/haswell/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/haswell/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/haswell/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "LD_LIBRARY_PATH/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/local/cuda/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\33\2\0\0\0\0\0"..., 832) = 832
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0755, st_size=1800248, ...}) = 0
+32667 32666 32667 mmap(NULL, 3906272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1f19adf000
+32667 32666 32667 mprotect(0x7f1f19c90000, 2093056, PROT_NONE) = 0
+32667 32666 32667 mmap(0x7f1f19e8f000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7f1f19e8f000
+32667 32666 32667 mmap(0x7f1f19e95000, 15072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1f19e95000
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1f1a4c2000
+32667 32666 32667 arch_prctl(ARCH_SET_FS, 0x7f1f1a4c2740) = 0
+32667 32666 32667 mprotect(0x7f1f19e8f000, 16384, PROT_READ) = 0
+32667 32666 32667 mprotect(0x7f1f1a09b000, 4096, PROT_READ) = 0
+32667 32666 32667 mprotect(0x7f1f1a2c2000, 16384, PROT_READ) = 0
+32667 32666 32667 mprotect(0x700000, 12288, PROT_READ) = 0
+32667 32666 32667 mprotect(0x7f1f1a4eb000, 4096, PROT_READ) = 0
+32667 32666 32667 munmap(0x7f1f1a4c7000, 145054) = 0
+32667 32666 32667 openat(AT_FDCWD, "/dev/tty", O_RDWR|O_NONBLOCK) = 3
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 brk(NULL)             = 0x25f4000
+32667 32666 32667 brk(0x25f5000)        = 0x25f5000
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 brk(0x25f6000)        = 0x25f6000
+32667 32666 32667 openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0644, st_size=2995, ...}) = 0
+32667 32666 32667 brk(0x25f8000)        = 0x25f8000
+32667 32666 32667 read(3, "# Locale name alias data base.\n#"..., 4096) = 2995
+32667 32666 32667 brk(0x25f9000)        = 0x25f9000
+32667 32666 32667 brk(0x25fa000)        = 0x25fa000
+32667 32666 32667 read(3, "", 4096)     = 0
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.utf8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0644, st_size=306, ...}) = 0
+32667 32666 32667 mmap(NULL, 306, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1f1a4ea000
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0644, st_size=26376, ...}) = 0
+32667 32666 32667 mmap(NULL, 26376, PROT_READ, MAP_SHARED, 3, 0) = 0x7f1f1a4e3000
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.utf8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0644, st_size=23, ...}) = 0
+32667 32666 32667 mmap(NULL, 23, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1f1a4e2000
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.utf8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0644, st_size=57, ...}) = 0
+32667 32666 32667 mmap(NULL, 57, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1f1a4e1000
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.utf8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0644, st_size=162, ...}) = 0
+32667 32666 32667 mmap(NULL, 162, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1f1a4e0000
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_NAME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.utf8/LC_NAME", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0644, st_size=82, ...}) = 0
+32667 32666 32667 mmap(NULL, 82, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1f1a4df000
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_PAPER", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.utf8/LC_PAPER", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0644, st_size=34, ...}) = 0
+32667 32666 32667 mmap(NULL, 34, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1f1a4de000
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.utf8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.utf8/LC_MESSAGES/SYS_LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0644, st_size=82, ...}) = 0
+32667 32666 32667 mmap(NULL, 82, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1f1a4dd000
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.utf8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0644, st_size=290, ...}) = 0
+32667 32666 32667 mmap(NULL, 290, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1f1a4dc000
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 brk(0x25fb000)        = 0x25fb000
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.utf8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0644, st_size=1456102, ...}) = 0
+32667 32666 32667 mmap(NULL, 1456102, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1f1a35e000
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_TIME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.utf8/LC_TIME", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0644, st_size=2868, ...}) = 0
+32667 32666 32667 mmap(NULL, 2868, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1f1a4db000
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 brk(0x25fc000)        = 0x25fc000
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.utf8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0644, st_size=54, ...}) = 0
+32667 32666 32667 mmap(NULL, 54, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1f1a4da000
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+32667 32666 32667 openat(AT_FDCWD, "/usr/lib/locale/zh_CN.utf8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3
+32667 32666 32667 fstat(3, {st_mode=S_IFREG|0644, st_size=331436, ...}) = 0
+32667 32666 32667 mmap(NULL, 331436, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1f1a30d000
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 brk(0x25fd000)        = 0x25fd000
+32667 32666 32667 getuid()              = 1000
+32667 32666 32667 getgid()              = 1000
+32667 32666 32667 geteuid()             = 1000
+32667 32666 32667 getegid()             = 1000
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+32667 32666 32667 ioctl(-1, TIOCGPGRP, 0x7ffe79f2a0a4) = -1 EBADF (Bad file descriptor)
+32667 32666 32667 sysinfo({uptime=30767, loads=[20928, 40544, 57440], totalram=16774483968, freeram=10425196544, sharedram=46702592, bufferram=220192768, totalswap=16000217088, freeswap=16000217088, procs=894, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+32667 32666 32667 brk(0x25fe000)        = 0x25fe000
+32667 32666 32667 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+32667 32666 32667 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+32667 32666 32667 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+32667 32666 32667 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+32667 32666 32667 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+32667 32666 32667 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+32667 32666 32667 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+32667 32666 32667 rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 uname({sysname="Linux", nodename="thunder", ...}) = 0
+32667 32666 32667 brk(0x2602000)        = 0x2602000
+32667 32666 32667 brk(0x2604000)        = 0x2604000
+32667 32666 32667 brk(0x2606000)        = 0x2606000
+32667 32666 32667 brk(0x2607000)        = 0x2607000
+32667 32666 32667 brk(0x2608000)        = 0x2608000
+32667 32666 32667 brk(0x2609000)        = 0x2609000
+32667 32666 32667 brk(0x260a000)        = 0x260a000
+32667 32666 32667 brk(0x260b000)        = 0x260b000
+32667 32666 32667 stat("/home/ren/play/temp/strace-4.21", {st_mode=S_IFDIR|0755, st_size=32768, ...}) = 0
+32667 32666 32667 stat(".", {st_mode=S_IFDIR|0755, st_size=32768, ...}) = 0
+32667 32666 32667 stat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+32667 32666 32667 stat("/home/ren", {st_mode=S_IFDIR|0755, st_size=221184, ...}) = 0
+32667 32666 32667 stat("/home/ren/play", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+32667 32666 32667 stat("/home/ren/play/temp", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+32667 32666 32667 stat("/home/ren/play/temp/strace-4.21", {st_mode=S_IFDIR|0755, st_size=32768, ...}) = 0
+32667 32666 32667 getpid()              = 32667
+32667 32666 32667 getppid()             = 32666
+32667 32666 32667 brk(0x260c000)        = 0x260c000
+32667 32666 32667 brk(0x260d000)        = 0x260d000
+32667 32666 32667 getpid()              = 32667
+32667 32666 32667 brk(0x260e000)        = 0x260e000
+32667 32666 32667 getpgrp()             = 32661
+32667 32666 32667 ioctl(2, TIOCGPGRP, [32661]) = 0
+32667 32666 32667 rt_sigaction(SIGCHLD, {sa_handler=0x44cf90, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 prlimit64(0, RLIMIT_NPROC, NULL, {rlim_cur=63880, rlim_max=63880}) = 0
+32667 32666 32667 brk(0x260f000)        = 0x260f000
+32667 32666 32667 brk(0x2610000)        = 0x2610000
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+32667 32666 32667 getpeername(0, 0x7ffe79f2a0a0, [16]) = -1 ENOTSOCK (Socket operation on non-socket)
+32667 32666 32667 brk(0x2611000)        = 0x2611000
+32667 32666 32667 brk(0x2612000)        = 0x2612000
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+32667 32666 32667 brk(0x2613000)        = 0x2613000
+32667 32666 32667 brk(0x2614000)        = 0x2614000
+32667 32666 32667 brk(0x2615000)        = 0x2615000
+32667 32666 32667 brk(0x2616000)        = 0x2616000
+32667 32666 32667 brk(0x2617000)        = 0x2617000
+32667 32666 32667 brk(0x2618000)        = 0x2618000
+32667 32666 32667 brk(0x2619000)        = 0x2619000
+32667 32666 32667 brk(0x261a000)        = 0x261a000
+32667 32666 32667 brk(0x261b000)        = 0x261b000
+32667 32666 32667 brk(0x261c000)        = 0x261c000
+32667 32666 32667 brk(0x261d000)        = 0x261d000
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+32667 32666 32667 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f1f1a4c2a10) = 32668
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+32667 32666 32667 rt_sigaction(SIGINT, {sa_handler=0x449930, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 32668
+32667 32666 32667 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=0x449930, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=32668, si_uid=1000, si_status=1, si_utime=0, si_stime=0} ---
+32667 32666 32667 wait4(-1, 0x7ffe79f28e10, WNOHANG, NULL) = -1 ECHILD (No child processes)
+32667 32666 32667 rt_sigreturn({mask=[]}) = 0
+32667 32666 32667 pipe([3, 4])          = 0
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+32667 32666 32667 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f1f1a4c2a10) = 32669
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 rt_sigaction(SIGCHLD, {sa_handler=0x44cf90, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1f19b13f00}, {sa_handler=0x44cf90, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 close(4)              = 0
+32667 32666 32667 read(3, "all\n", 128) = 4
+32667 32666 32667 read(3, "", 128)      = 0
+32667 32666 32667 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=32669, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+32667 32666 32667 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 32669
+32667 32666 32667 wait4(-1, 0x7ffe79f28d50, WNOHANG, NULL) = -1 ECHILD (No child processes)
+32667 32666 32667 rt_sigreturn({mask=[]}) = 0
+32667 32666 32667 close(3)              = 0
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+32667 32666 32667 rt_sigaction(SIGINT, {sa_handler=0x449930, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=0x449930, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 write(1, "Making all in .\n", 16) = 16
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [CHLD], [INT CHLD], 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [INT CHLD], NULL, 8) = 0
+32667 32666 32667 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f1f1a4c2a10) = 32672
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+32667 32666 32667 rt_sigaction(SIGINT, {sa_handler=0x449930, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 32672
+32667 32666 32667 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=0x449930, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=32672, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+32667 32666 32667 wait4(-1, 0x7ffe79f29050, WNOHANG, NULL) = -1 ECHILD (No child processes)
+32667 32666 32667 rt_sigreturn({mask=[]}) = 0
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 write(1, "Making all in tests\n", 20) = 20
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+32667 32666 32667 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f1f1a4c2a10) = 32676
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+32667 32666 32667 rt_sigaction(SIGINT, {sa_handler=0x449930, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 32676
+32667 32666 32667 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=0x449930, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=32676, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+32667 32666 32667 wait4(-1, 0x7ffe79f29050, WNOHANG, NULL) = -1 ECHILD (No child processes)
+32667 32666 32667 rt_sigreturn({mask=[]}) = 0
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 write(1, "Making all in tests-m32\n", 24) = 24
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+32667 32666 32667 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f1f1a4c2a10) = 32679
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+32667 32666 32667 rt_sigaction(SIGINT, {sa_handler=0x449930, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 32679
+32667 32666 32667 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=0x449930, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=32679, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+32667 32666 32667 wait4(-1, 0x7ffe79f29050, WNOHANG, NULL) = -1 ECHILD (No child processes)
+32667 32666 32667 rt_sigreturn({mask=[]}) = 0
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+32667 32666 32667 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32667 32666 32667 exit_group(0)         = ?
+32667 32666 32667 +++ exited with 0 +++

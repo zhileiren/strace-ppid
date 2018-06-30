@@ -1,0 +1,18 @@
+32670 32669 32670 getpid()              = 32670
+32670 32669 32670 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32670 32669 32670 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32670 32669 32670 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32670 32669 32670 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32670 32669 32670 close(3)              = 0
+32670 32669 32670 dup2(4, 1)            = 1
+32670 32669 32670 close(4)              = 0
+32670 32669 32670 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=0x4676d0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32670 32669 32670 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32670 32669 32670 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1f19b13f00}, {sa_handler=0x44cf90, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32670 32669 32670 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+32670 32669 32670 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32670 32669 32670 rt_sigaction(SIGCHLD, {sa_handler=0x44cf90, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32670 32669 32670 rt_sigaction(SIGINT, {sa_handler=0x4676d0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32670 32669 32670 write(1, "all-recursive\n", 14) = 14
+32670 32669 32670 exit_group(0)         = ?
+32670 32669 32670 +++ exited with 0 +++

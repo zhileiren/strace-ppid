@@ -1,0 +1,40 @@
+32669 32667 32669 getpid()              = 32669
+32669 32667 32669 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32669 32667 32669 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32669 32667 32669 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32669 32667 32669 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32669 32667 32669 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32669 32667 32669 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32669 32667 32669 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1f19b13f00}, {sa_handler=0x44cf90, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32669 32667 32669 rt_sigaction(SIGCHLD, {sa_handler=0x44cf90, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32669 32667 32669 rt_sigaction(SIGINT, {sa_handler=0x4676d0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32669 32667 32669 dup2(4, 1)            = 1
+32669 32667 32669 close(4)              = 0
+32669 32667 32669 close(3)              = 0
+32669 32667 32669 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+32669 32667 32669 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+32669 32667 32669 pipe([3, 4])          = 0
+32669 32667 32669 rt_sigprocmask(SIG_BLOCK, [INT CHLD], [CHLD], 8) = 0
+32669 32667 32669 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f1f1a4c2a10) = 32670
+32669 32667 32669 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+32669 32667 32669 close(4)              = 0
+32669 32667 32669 close(4)              = -1 EBADF (Bad file descriptor)
+32669 32667 32669 rt_sigprocmask(SIG_BLOCK, [INT CHLD], [CHLD], 8) = 0
+32669 32667 32669 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f1f1a4c2a10) = 32671
+32669 32667 32669 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+32669 32667 32669 close(3)              = 0
+32669 32667 32669 rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+32669 32667 32669 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+32669 32667 32669 rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+32669 32667 32669 rt_sigaction(SIGINT, {sa_handler=0x449930, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=0x4676d0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32669 32667 32669 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 32670
+32669 32667 32669 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 32671
+32669 32667 32669 rt_sigaction(SIGINT, {sa_handler=0x4676d0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, {sa_handler=0x449930, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f1f19b13f00}, 8) = 0
+32669 32667 32669 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+32669 32667 32669 close(3)              = -1 EBADF (Bad file descriptor)
+32669 32667 32669 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+32669 32667 32669 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=32670, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+32669 32667 32669 wait4(-1, 0x7ffe79f28a10, WNOHANG, NULL) = -1 ECHILD (No child processes)
+32669 32667 32669 rt_sigreturn({mask=[]}) = 0
+32669 32667 32669 exit_group(0)         = ?
+32669 32667 32669 +++ exited with 0 +++
