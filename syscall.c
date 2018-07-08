@@ -653,6 +653,18 @@ syscall_entering_decode(struct tcb *tcp)
 	return 1;
 }
 
+void
+printcwd(struct tcb *tcp)
+{
+    /* /proc/32767/cwd */
+    char buffer[16];
+    char resolved[PATH_MAX];
+    snprintf(buffer, 16, "/proc/%d/cwd", tcp->pid);
+    realpath(buffer, resolved);
+    tprintf("[%s] ", resolved);
+}
+
+
 int
 syscall_entering_trace(struct tcb *tcp, unsigned int *sig)
 {
@@ -697,6 +709,7 @@ syscall_entering_trace(struct tcb *tcp, unsigned int *sig)
 #endif
 
 	printleader(tcp);
+    printcwd(tcp);
 	tprintf("%s(", tcp->s_ent->sys_name);
 	int res = raw(tcp) ? printargs(tcp) : tcp->s_ent->sys_func(tcp);
 	fflush(tcp->outf);
