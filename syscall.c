@@ -709,7 +709,7 @@ syscall_entering_trace(struct tcb *tcp, unsigned int *sig)
 #endif
 
 	printleader(tcp);
-    printcwd(tcp);
+	printcwd(tcp);
 	tprintf("%s(", tcp->s_ent->sys_name);
 	int res = raw(tcp) ? printargs(tcp) : tcp->s_ent->sys_func(tcp);
 	fflush(tcp->outf);
