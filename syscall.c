@@ -656,12 +656,12 @@ syscall_entering_decode(struct tcb *tcp)
 void
 printcwd(struct tcb *tcp)
 {
-    /* /proc/32767/cwd */
-    char buffer[16];
-    char resolved[PATH_MAX];
-    snprintf(buffer, 16, "/proc/%d/cwd", tcp->pid);
-    realpath(buffer, resolved);
-    tprintf("[%s] ", resolved);
+	/* /proc/32767/cwd */
+	char buffer[16];
+	char resolved[PATH_MAX];
+	snprintf(buffer, 16, "/proc/%d/cwd", tcp->pid);
+	realpath(buffer, resolved);
+	tprintf("[%s] ", resolved);
 }
 
 
