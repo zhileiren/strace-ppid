@@ -89,7 +89,7 @@ int get_pid_from_str(const char* str) {
 }
 
 char* form_path_to_pid(int pid) {
-    char pid_str[sizeof("12345")];
+    char pid_str[sizeof("1234567")];
     char* retval;
     const size_t pid_strlen = sizeof(pid_str) / sizeof(pid_str[0]);
     size_t outlen;
